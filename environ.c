@@ -14,8 +14,8 @@ int _myenv(info_t *info)
 
 /**
  * _getenv - A function to get the value of an environ variable
- * @info: This is the Structure containing potential arguments. Used to maintain
- * @name: Represents the environmental variable name
+ * @info: This is the Structure containing arguments. Used to maintain
+ * @leo_name: Represents the environmental variable name
  *
  * Return: the resulting value of the code
  */

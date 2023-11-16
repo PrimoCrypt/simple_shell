@@ -65,7 +65,7 @@ int string_to_integer(char *s)
 	}
 
 	if (sign == -1)
-		return -result;
+		return (-result);
 	else
-		return result;
+		return (result);
 }
