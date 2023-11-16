@@ -25,7 +25,7 @@ int unset_alias(info_t *info, char *leo_str)
 	char *leo_p, leo_c;
 	int leo_ret;
 
-	p = _strchr(leo_str, '=');
+	leo_p = _strchr(leo_str, '=');
 	if (!leo_p)
 		return (1);
 	leo_c = *leo_p;
@@ -70,9 +70,9 @@ int print_alias(list_t *node)
 
 	if (node)
 	{
-		leo_p = _strchr(node->leo_str, '=');
-		for (leo_a = node->leo_str; a <= leo_p; leo_a++)
-			_putchar(*a);
+		leo_p = _strchr(node->str, '=');
+		for (leo_a = node->str; leo_a <= leo_p; leo_a++)
+			_putchar(*leo_a);
 		_putchar('\'');
 		_puts(leo_p + 1);
 		_puts("'\n");
