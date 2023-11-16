@@ -13,7 +13,6 @@
 #include <errno.h>
 
 /* toem_atoi.c */
-int is_shell_interactive(info_t *);
 int is_delimeter(char, char *);
 int is_alpha(int);
 int string_to_integer(char *);
