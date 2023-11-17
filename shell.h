@@ -167,10 +167,10 @@ void *_realloc(void *, unsigned int, unsigned int);
 int bfree(void **);
 
 /* for the toem_atoi.c */
-int interactive(info_t *);
-int is_delim(char, char *);
-int _isalpha(int);
-int _atoi(char *);
+int is_shell_interactive(info_t *);
+int is_delimiter(char, char *);
+int is_alpha(int);
+int string_to_integer(char *);
 
 /* for the toem_errors1.c */
 int _erratoi(char *);
